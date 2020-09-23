@@ -72,18 +72,18 @@ body {
     transform: translate(-50%, 0%);
 }
 
+
 .nav-below {
-    display: flex;
-    position: absolute;
-    bottom:5%;
-    padding-left: 520px;
-    padding-top: 10px;
+  float: none;
+  position: absolute;
+  left: 50%;
+  top:70%;
+  transform: translateX(-50%);
 }
 .nav-below a {
     text-decoration: none;
-    padding: 12px 15px;
-    color: #BFC9CA;
     transition: .3s;
+    padding: 10px;
 }
 
 .nav-below a:hover {
@@ -104,7 +104,7 @@ body {
     /*align-items: center;*/
 }
 .portfolio-single {
-    padding: 20px;
+    padding: 30px;
     align-items: center;
 }
 
