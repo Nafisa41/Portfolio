@@ -10,20 +10,24 @@ body {
 }
 
 .nav-wrapper {
-    display: flex;
-    padding-left: 520px;
-    padding-top: 30px;
+  float: none;
+  position: absolute;
+  left: 50%;
+  top:5%;
+  transform: translateX(-50%);
 }
 .nav-wrapper a {
     font-family: chalk;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 80px;
-    padding: 12px 8px;
     color: #BFC9CA;
     text-decoration: none;
     text-transform: uppercase;
     transition: .3s;
+    padding: 10px;
+    text-align: center;
+    /* white-space: nowrap;
+    overflow: hidden; */
 }
 
 .nav-wrapper a:hover {
@@ -42,38 +46,41 @@ body {
     position: absolute;
 }
 
-.writing {
-    position: center;
-    width: 900px;
-    height: 40px;
-    padding-left: 200px;
-    padding-top: 0px;
-    padding-bottom: 50px;
-}
-
 .quote {
-    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 30px;
     font-weight: 400;
     font-family: chalk;
     color: #BFC9CA;
     text-align: center;
     text-transform: uppercase;
+    transform: translate(-50%, 0%);
 }
 
 .nietzsche {
-    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 24px;
     font-weight: 400;
     font-family: chalk;
     color: #BFC9CA;
     text-align: center;
-
+    text-transform: uppercase;
+    transform: translate(-50%, 0%);
 }
+
 .nav-below {
     display: flex;
+    position: absolute;
+    bottom:5%;
     padding-left: 520px;
     padding-top: 10px;
 }
 .nav-below a {
+    text-decoration: none;
     padding: 12px 15px;
     color: #BFC9CA;
     transition: .3s;
@@ -86,22 +93,14 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    padding-left: 380px;
-    padding-right:300px;
-    padding-top: 150px;
-    padding-bottom: 80px;
-}
 
+}
 .portfolio-all {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /*align-items: center;*/
 }
 .portfolio-single {
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-bottom: 20px;
-	padding-top: 10px;
     align-items: center;
 }
 
