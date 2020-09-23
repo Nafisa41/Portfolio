@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interests</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="bgImgCenter">
+        <div class="container">
+            <div class="portfolio-all">
+                <div class="portfolio-single">
+                    <div class="portfolio-background">
+                        <a href="">
+                            <img src="images/book.jpg" alt="books">
+                        </a>
+                    </div>
+                    <div class="img-txt-wrap">
+                        <div class="subtitle">Books</div>
+                    </div>
+                </div>
+                <div class="portfolio-single">
+                    <div class="portfolio-background">
+                        <a href="">
+                            <img src="images/mus.png" alt="music">
+                        </a>
+                    </div>
+                    <div class="img-txt-wrap">
+                        <div class="subtitle">Music</div>
+                    </div>
+                </div>
+                <div class="portfolio-single">
+                    <div class="portfolio-background">
+                        <a href="">
+                            <img src="images/computer.jpg" alt="work">
+                        </a>
+                    </div>
+                    <div class="img-txt-wrap">
+                        <div class="subtitle">Work</div>
+                    </div>
+                </div>
+                <div class="portfolio-single">
+                    <div class="portfolio-background">
+                        <a href="">
+                            <img src="images/writing.jpg" alt="write">
+                        </a>
+                    </div>
+                    <div class="img-txt-wrap">
+                        <div class="subtitle">Writing</div>
+                    </div>
+                </div>
+                <div class="portfolio-single">
+                    <div class="portfolio-background">
+                        <a href="">
+                            <img src="images/movie.jpg" alt="movies">
+                        </a>
+                    </div>
+                    <div class="img-txt-wrap">
+                        <div class="subtitle">Movies</div>
+                    </div>
+                </div>
+                <div class="portfolio-single">
+                    <div class="portfolio-background">
+                        <a href="">
+                            <img src="images/coding.jpg" alt="coding">
+                        </a>
+                    </div>
+                    <div class="img-txt-wrap">
+                        <div class="subtitle">Coding</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+const portfolioItems = document.querySelectorAll('.portfolio-single')
+
+portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+})
+</script>
+
+</html>
