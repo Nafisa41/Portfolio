@@ -18,7 +18,7 @@ body {
 }
 .nav-wrapper a {
     font-family: chalk;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
     color: #BFC9CA;
     text-decoration: none;
@@ -37,12 +37,15 @@ body {
 .bgImgCenter {
     display: grid;
     grid-template-columns: 1fr;
-    background: linear-gradient(rgba(0, 1, 0, 0.65), rgba(0, 1, 0, 0.65)), url('images/image.jpg');
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 1, 0, 0.65), rgba(0, 1, 0, 0.65)), url('images/img.jpg');
+    /*background-repeat: repeat;*/
     opacity: 1;
     height: 100%;
     width: 100%;
     background-size: cover;
+    background-position: center center;
+    margin:auto;
+    padding:0;
     position: absolute;
 }
 
@@ -50,7 +53,7 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     font-family: chalk;
     color: #BFC9CA;
@@ -61,9 +64,9 @@ body {
 
 .nietzsche {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 400;
     font-family: chalk;
     color: #BFC9CA;
@@ -77,7 +80,7 @@ body {
   float: none;
   position: absolute;
   left: 50%;
-  top:70%;
+  top:85%;
   transform: translateX(-50%);
 }
 .nav-below a {
